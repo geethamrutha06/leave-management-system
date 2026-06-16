@@ -256,6 +256,4 @@ updated_at         reviewed_date
 
 ---
 
-## 📄 License
 
-This project is licensed under the MIT License.
