@@ -1,0 +1,23 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; }
+.sidebar { width: 240px; min-height: 100vh; background: #1e293b; color: #fff; position: fixed; left: 0; top: 0; z-index: 100; }
+.sidebar .brand { padding: 1.5rem 1.25rem; font-size: 1.1rem; font-weight: 700; border-bottom: 1px solid #334155; }
+.sidebar .nav-link { color: #94a3b8; padding: .65rem 1.25rem; display: flex; align-items: center; gap: .6rem; border-radius: 6px; margin: 2px 8px; font-size: .9rem; }
+.sidebar .nav-link:hover, .sidebar .nav-link.active { background: #334155; color: #fff; }
+.main-content { margin-left: 240px; padding: 2rem; min-height: 100vh; }
+.stat-card { border-radius: 12px; padding: 1.5rem; color: #fff; }
+.stat-card.blue   { background: linear-gradient(135deg,#3b82f6,#1d4ed8); }
+.stat-card.green  { background: linear-gradient(135deg,#10b981,#059669); }
+.stat-card.yellow { background: linear-gradient(135deg,#f59e0b,#d97706); }
+.stat-card.red    { background: linear-gradient(135deg,#ef4444,#dc2626); }
+.stat-card.purple { background: linear-gradient(135deg,#8b5cf6,#7c3aed); }
+.stat-card .value { font-size: 2rem; font-weight: 700; }
+.stat-card .label { font-size: .85rem; opacity: .85; }
+.badge-pending  { background:#fef3c7; color:#92400e; padding:3px 10px; border-radius:20px; font-size:12px; font-weight:500; }
+.badge-approved { background:#d1fae5; color:#065f46; padding:3px 10px; border-radius:20px; font-size:12px; font-weight:500; }
+.badge-rejected { background:#fee2e2; color:#991b1b; padding:3px 10px; border-radius:20px; font-size:12px; font-weight:500; }
+.page-title { font-size: 1.4rem; font-weight: 700; color: #1e293b; margin-bottom: 1.5rem; }
+.card { border: none; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.btn-primary { background: #4f46e5; border-color: #4f46e5; }
+.btn-primary:hover { background: #4338ca; border-color: #4338ca; }
+@media(max-width:768px) { .sidebar { width: 100%; min-height: auto; position: static; } .main-content { margin-left: 0; } }
